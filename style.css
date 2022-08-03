@@ -1,0 +1,180 @@
+/** {
+  border: 1px solid red;
+}
+*/
+
+*{
+  box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.space-bottom{
+  margin-bottom: 32px;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+
+h2{
+  color: #46ad75;
+  line-height: 40px;
+  font-size: 32px;
+}
+
+h3{
+  color: #7ECE90;
+  font-size: 24px;
+}
+
+body{
+  background-color: #F7F9FC;
+  color: #575F7D;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 32px;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
+
+.profile-pic-size{
+  height: 100px;
+  width: 100px;
+}
+
+.card-white{
+  background-color: white;
+  padding: 30px;
+  min-height: 350px;
+  border: 1px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px rgba(180, 180, 180, 0.1);
+  /* text-align: center; */
+}
+
+.container{
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-item{
+  flex: 0 0 200px;
+}
+
+.main{
+  max-width: 600px;
+  text-align: center;
+}
+
+.list-inline > li{
+  display: inline-block;
+  list-style: none;
+  padding-left: 0px;
+  padding: 0px 20px;
+  color: rgb(230, 230, 230);
+}
+
+#button-linkedin{
+  color: white;
+  font-size: 16px;
+  padding: 15px 32px;
+  border: none;
+  background: rgb(9,9,121);
+  background: linear-gradient(90deg, rgba(9,9,121,1) 45%, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 188%);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#button-linkedin:hover{
+  background: rgb(45, 100, 188);
+  animation: all 1s;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  font-weight: 600;
+  font-size: 50px;
+}
+
+a:hover{
+  color: rgb(3, 41, 41);
+  cursor: pointer;
+}
+
+
+
+/* ---------RESPONSIVENESS------- */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
+/* TEST CARD POSITIONS */
+.parent-test-card{
+  border: 3px dotted black;
+  position: relative;
+}
+
+.card-orange{
+  background: orange;
+  height: 100px;
+  width: 1900px;
+  top: 50px;
+  position: sticky;
+}
+
+.card-green{
+  background: green;
+  height: 100px;
+}
+
+.card-blue{
+  background: blue;
+  height: 100px;
+  top: 20px;
+  left: 20px;
+  position: sticky;
+}
+
+.card-purple{
+  background: purple;
+  height: 100px;
+}
+
+.card-red{
+  background: red;
+  height: 100px;
+}
